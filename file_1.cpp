@@ -64,3 +64,10 @@ class Stack {
         return top==NULL;  //RETURN TRUE IF THE TOP POINTER S NULL,INDICATION
     }
 };
+
+int main(){
+    Stack stack;
+
+    int choice = 0;
+    int value;
+}
