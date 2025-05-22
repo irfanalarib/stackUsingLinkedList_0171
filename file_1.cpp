@@ -25,5 +25,6 @@ class Stack {
 
     int push(int value){
         node* newNode =new node();//1. allocate memory for the new node
+        newNode->data = value; //2. assign value
     }
 };
