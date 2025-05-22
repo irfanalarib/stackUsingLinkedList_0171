@@ -3,12 +3,12 @@
 using namespace std;
 
 //node class representing a single node is the linked list
-class node {
+class Node {
     public:
     int data;
-    node * next;
+    Node* next;
 
-    node(){
+    Node(){
         next = NULL;
     }
 };
@@ -16,7 +16,7 @@ class node {
 //Stack class
 class Stack {
     private:
-    node* top;
+    Node* top;
 
     public:
     Stack(){
@@ -24,12 +24,12 @@ class Stack {
     }
 
     int push(int value){
-        node* newNode =new node();//1. allocate memory for the new node
+        Node* newNode =new Node();//1. allocate memory for the new node
         newNode->data = value; //2. assign value
         newNode->next = top; //3. set the next pointer of the new node to the current top
-        top= newNode; //4. update the top pointer to the new node
-         cout << "push value: " << value<< endl;
-         return value;
+        top = newNode; //4. update the top pointer to the new node
+        cout << "push value: " << value<< endl;
+        return value;
     }
 
     //pop oretation : remove the topmost element from the stack
@@ -37,5 +37,8 @@ class Stack {
         if(isEmpty()){
             cout << "stack is empty. " << endl;
         }
+
+    Node* temp = top;//crate a temporary pointer to the top node
+    top = top->next;
+    cout << "popped value: " <<top->data << endl;
     }
-};
