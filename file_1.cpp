@@ -31,4 +31,11 @@ class Stack {
          cout << "push value: " << value<< endl;
          return value;
     }
+
+    //pop oretation : remove the topmost element from the stack
+    void pop(){
+        if(isEmpty()){
+            cout << "stack is empty. " << endl;
+        }
+    }
 };
