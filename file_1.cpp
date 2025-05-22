@@ -79,5 +79,10 @@ int main(){
         cout << "1. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
+
+        switch (choice)
+        {
+            
+        }
     }
 }
