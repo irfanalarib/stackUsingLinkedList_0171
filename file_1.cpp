@@ -17,4 +17,9 @@ class node {
 class Stack {
     private:
     node* top;
+
+    public:
+    Stack(){
+        top = NULL;
+    }
 };
