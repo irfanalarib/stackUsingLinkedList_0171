@@ -22,4 +22,8 @@ class Stack {
     Stack(){
         top = NULL;
     }
+
+    int push(int value){
+        node* newNode =new node();//1. allocate memory for the new node
+    }
 };
